@@ -1,0 +1,94 @@
+{
+  TS_NODE_TRANSPILE_ONLY: 'TRUE',
+  TERM_PROGRAM: 'iTerm.app',
+  TERM: 'xterm-256color',
+  SHELL: '/bin/bash',
+  TMPDIR: '/var/folders/nk/fwhtlcmj0gs3pz0ll7fpk53c0000gn/T/',
+  Apple_PubSub_Socket_Render: '/private/tmp/com.apple.launchd.S5P8jORmaU/Render',
+  TERM_PROGRAM_VERSION: '3.4.4',
+  OLDPWD: '/Users/a1/projects/jva.kz',
+  TERM_SESSION_ID: 'w1t1p0:E185DA1E-D34F-4F22-95D4-B30F62616AFF',
+  USER: 'a1',
+  SSH_AUTH_SOCK: '/private/tmp/com.apple.launchd.wRKypUaoke/Listeners',
+  __CF_USER_TEXT_ENCODING: '0x1F5:0x0:0x0',
+  PATH: '/Users/a1/.cargo/bin:/Users/a1/.composer/vendor/bin:/Users/a1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
+  PWD: '/Users/a1/projects/jva.kz/backend',
+  ITERM_PROFILE: 'Default',
+  XPC_FLAGS: '0x0',
+  ITERM_ORIG_PS1: '\\h:\\W \\u\\$ ',
+  PS1: '\\[33m[nodemon] files triggering change check: src/app.ts[39m
+[33m[nodemon] matched rule: /Users/a1/projects/jva.kz/backend/src/**/*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/app.ts[39m
+
+[32m[nodemon] starting `node -r ts-node/register -r tsconfig-paths/register --preserve-symlinks ./src/app.ts`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 59024[39m
+CRUDEndpoints init from endpoint nft
+CRUDEndpoints init from endpoint collections
+APP STARTED! PORT:  8081
+[36m@GBX:[0m [32mError in Db connection: [0m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] files triggering change check: src/app.ts[39m
+[33m[nodemon] matched rule: /Users/a1/projects/jva.kz/backend/src/**/*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/app.ts[39m
+
+[32m[nodemon] starting `node -r ts-node/register -r tsconfig-paths/register --preserve-symlinks ./src/app.ts`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 59256[39m
+CRUDEndpoints init from endpoint nft
+CRUDEndpoints init from endpoint collections
+APP STARTED! PORT:  8081
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] files triggering change check: src/app.ts[39m
+[33m[nodemon] matched rule: /Users/a1/projects/jva.kz/backend/src/**/*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/app.ts[39m
+
+[32m[nodemon] starting `node -r ts-node/register -r tsconfig-paths/register --preserve-symlinks ./src/app.ts`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 59369[39m
+CRUDEndpoints init from endpoint nft
+[33m[nodemon] files triggering change check: src/app.ts[39m
+[33m[nodemon] matched rule: /Users/a1/projects/jva.kz/backend/src/**/*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/app.ts[39m
+
+[32m[nodemon] starting `node -r ts-node/register -r tsconfig-paths/register --preserve-symlinks ./src/app.ts`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 59378[39m
+CRUDEndpoints init from endpoint nft
+CRUDEndpoints init from endpoint collections
+APP STARTED! PORT:  8081
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] files triggering change check: src/endpoints/nft.endpoint.ts[39m
+[33m[nodemon] matched rule: /Users/a1/projects/jva.kz/backend/src/**/*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/endpoints/nft.endpoint.ts[39m
+
+[32m[nodemon] starting `node -r ts-node/register -r tsconfig-paths/register --preserve-symlinks ./src/app.ts`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 60222[39m
+CRUDEndpoints init from endpoint nft
+CRUDEndpoints init from endpoint collections
+APP STARTED! PORT:  8081
+[33m[nodemon] files triggering change check: src/endpoints/nft.endpoint.ts[39m
+[33m[nodemon] matched rule: /Users/a1/projects/jva.kz/backend/src/**/*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/endpoints/nft.endpoint.ts[39m
+
+[32m[nodemon] starting `node -r ts-node/register -r tsconfig-paths/register --preserve-symlinks ./src/app.ts`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 60230[39m
+CRUDEndpoints init from endpoint nft
+CRUDEndpoints init from endpoint collections
+APP STARTED! PORT:  8081
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] exiting[39m
