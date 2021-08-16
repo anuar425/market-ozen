@@ -1,13 +1,21 @@
 <template>
   <el-header class="iHeader">
     <div class="logo-group" @click="$router.push('/')">
-      <div class="logo"><svg width="1" height="1"></svg></div>
+      <div class="logo">
+        <video width="45" height="45" autoplay>
+          <source src="../assets/clockgif2.gif.mp4" type="video/mp4" />
+        </video>
+      </div>
       &nbsp;&nbsp;
-      <div class="name">Ozen</div>
+      <div class="name">JasVentures</div>
     </div>
 
     <div style="flex-grow: 1">
-      <el-input placeholder="Поиск работ, коллекций и пользователей" v-model="search" @keydown.enter="goSearch">
+      <el-input
+        placeholder="Поиск работ, коллекций и пользователей"
+        v-model="search"
+        @keydown.enter="goSearch"
+      >
         <template #prefix>
           <i class="el-input__icon el-icon-search"></i>
         </template>
@@ -26,14 +34,35 @@
               v-for="(cat, idx) in menu.items"
               :key="idx"
               @click="$router.push(cat.path)"
-              ><i class="fa-fw fa" :class="`fa-${cat.icon}`"></i> {{ cat.name }}</el-dropdown-item
+              ><i class="fa-fw fa" :class="`fa-${cat.icon}`"></i>
+              {{ cat.name }}</el-dropdown-item
             >
             <div class="socials" v-if="midx === 2">
-              <a target="_blank" href="https://sergazin.kz" class="fab fa-twitter"></a>
-              <a target="_blank" href="https://instagram.com/armaneden" class="fab fa-instagram"></a>
-              <a target="_blank" href="https://sergazin.kz" class="fab fa-facebook"></a>
-              <a target="_blank" href="https://sergazin.kz" class="fab fa-discord"></a>
-              <a target="_blank" href="https://telegram.me/sergazin" class="fab fa-telegram"></a>
+              <a
+                target="_blank"
+                href="https://sergazin.kz"
+                class="fab fa-twitter"
+              ></a>
+              <a
+                target="_blank"
+                href="https://instagram.com/armaneden"
+                class="fab fa-instagram"
+              ></a>
+              <a
+                target="_blank"
+                href="https://sergazin.kz"
+                class="fab fa-facebook"
+              ></a>
+              <a
+                target="_blank"
+                href="https://sergazin.kz"
+                class="fab fa-discord"
+              ></a>
+              <a
+                target="_blank"
+                href="https://telegram.me/sergazin"
+                class="fab fa-telegram"
+              ></a>
             </div>
           </el-dropdown-menu>
         </template>
@@ -43,7 +72,12 @@
 
       <el-dropdown v-if="user">
         <span class="el-dropdown-link" style="display:flex;align-items:center;">
-          <el-avatar :size="32" icon="el-icon-user-solid" :src="user.info.avatar" style="cursor: pointer">
+          <el-avatar
+            :size="32"
+            icon="el-icon-user-solid"
+            :src="user.info.avatar"
+            style="cursor: pointer"
+          >
           </el-avatar
           >&nbsp;&nbsp;
           <div>
@@ -62,17 +96,27 @@
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <div v-if="$store.state.wallet" style="width:200px;padding:0 20px;" index="2-1">
-              <i class="fa-fw fab fa-ethereum"></i> Адрес кошелька: {{ $store.state.wallet }}
+            <div
+              v-if="$store.state.wallet"
+              style="width:200px;padding:0 20px;"
+              index="2-1"
+            >
+              <i class="fa-fw fab fa-ethereum"></i> Адрес кошелька:
+              {{ $store.state.wallet }}
             </div>
-            <el-dropdown-item index="2-1" v-else @click="$router.push('/connect-wallet')"
-              ><i class="fa-fw fab fa-ethereum"></i> Подключить кошелек</el-dropdown-item
+            <el-dropdown-item
+              index="2-1"
+              v-else
+              @click="$router.push('/connect-wallet')"
+              ><i class="fa-fw fab fa-ethereum"></i> Подключить
+              кошелек</el-dropdown-item
             >
             <!-- 
             <el-dropdown-item index="2-1"><i class="fa-fw fa fa-star"></i> Мой профиль</el-dropdown-item>
                -->
             <el-dropdown-item index="2-2" @click="$router.push('/collections')"
-              ><i class="fa-fw fa fa-chart-line"></i> Мои коллекции</el-dropdown-item
+              ><i class="fa-fw fa fa-chart-line"></i> Мои
+              коллекции</el-dropdown-item
             >
             <el-dropdown-item index="2-2" @click="signOut()"
               ><i class="fa-fw fa fa-sign-out"></i> Выход</el-dropdown-item
@@ -83,7 +127,9 @@
       <div v-else>
         <el-button type="text" @click="$router.push('/login')"
           ><i class="fa-fw fa fa-sign-in" style="font-size:22px"></i>&nbsp;
-          <span style="display:inline-block;vertical-align:top;line-height:22px">Войти</span></el-button
+          <span style="display:inline-block;vertical-align:top;line-height:22px"
+            >Войти</span
+          ></el-button
         >
       </div>
     </div>
@@ -159,7 +205,8 @@ export default defineComponent({
       router.push("/");
     }
     function goSearch() {
-      if (search.value) router.push({ query: { q: search.value }, path: "/marketplace" });
+      if (search.value)
+        router.push({ query: { q: search.value }, path: "/marketplace" });
       else router.push({ path: "/marketplace" });
     }
     return {
@@ -168,7 +215,8 @@ export default defineComponent({
       search,
       menuMap,
       signOut,
-      circleUrl: "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
+      circleUrl:
+        "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
     };
   },
 });
@@ -181,7 +229,7 @@ export default defineComponent({
 .iHeader {
   display: flex;
   border-bottom: 1px solid lightgray;
-  padding: 0.8em 1.5em;
+  padding: 0.5em 1.5em;
   justify-content: space-between;
   align-items: center;
   position: fixed;
